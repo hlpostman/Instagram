@@ -1,8 +1,8 @@
 # Project 6 - *Instagram*
 
-**Name of your app** is a photo sharing app using Parse as its backend.
+**InstagramClone** is a photo sharing app using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
@@ -25,7 +25,15 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Additional user Experience features:
+	- [x] Separate sign up and login screens like real Instagram
+	- [x] User can navigate to sign up from login screen
+	- [x] User can navigate to login from sign up screen
+	- [x] Password entry is secure
+	- [x] User is notified if desired username is already taken
+	- [x] User can click to see Terms of Use and Privacy policy before signing up
+- [x] Additional code features:
+	- [x] All elements displayed using AutoLayout
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
