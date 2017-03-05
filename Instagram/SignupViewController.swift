@@ -26,8 +26,8 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        roundCorners()
-//        addBorders()
+        roundCorners()
+        addBorders()
         
         // Do any additional setup after loading the view.
     }
