@@ -19,13 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Link Parse with Heroku
-//        Parse.initializeWithConfiguration(
-//            ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
-//                configuration.applicationId = "Instagram"
-//                configuration.clientKey = nil  // set to nil assuming you have not set clientKey
-//                configuration.server = "https://myAppName.herokuapp.com/parse"
-//            })
-//          )
+        Parse.initialize(
+            with: ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "InstagramHLP"
+                configuration.clientKey = "asdfgsdif89hksn/4"  // set to nil assuming you have not set clientKey
+                configuration.server = "http://mysterious-wave-38982.herokuapp.com/parse"
+            })
+          )
         return true
     }
 

@@ -38,20 +38,20 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func onSignupButton(_ sender: AnyObject) {
-//        let newUser = PFUser()
-//        
-//        newUser.username = usernameField.text
-//        newUser.password = passwordField.text
-//        
-//        newUser.signUpInBackground(block: { (success: Bool, error: Error?) -> Void in
-//            if success {
-//                print("Created a user with username \(newUser.username!)")
+        let newUser = PFUser()
+
+        newUser.username = usernameField.text
+        newUser.password = passwordField.text
+
+        newUser.signUpInBackground(block: { (success: Bool, error: Error?) -> Void in
+            if success {
+                print("Created a user with username \(newUser.username!)")
 //                // Present logged in view with welcome message - still need to make this and a "signupSegue"
 ////                self.performSegue(withIdentifier: "signupSegue", sender: nil)
-//            } else {
-//                print(error?.localizedDescription)
-//            }
-//        })
+            } else {
+                print(error?.localizedDescription)
+            }
+        })
     }
 
     @IBAction func onGoToTermsAndPrivacyButton(_ sender: AnyObject) {
