@@ -47,6 +47,7 @@ class LoginViewController: UIViewController {
                 print(error?.localizedDescription ?? "Login failed and you didn't even get a real error, sorry")
             }
         })
+        self.performSegue(withIdentifier: "loginSegue", sender: self)
     }
 
     @IBAction func onForgotButton(_ sender: AnyObject) {
@@ -54,6 +55,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func onGoToSignupButton(_ sender: AnyObject) {
         // Present Signup View controller
+        self.performSegue(withIdentifier: "newUserSignUpSegue", sender: self)
     }
     
     func roundCorners() {
