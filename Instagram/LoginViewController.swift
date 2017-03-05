@@ -38,12 +38,15 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLoginButton(_ sender: AnyObject) {
-//        PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!, block: { (user: PFUser?, error: Error?) -> Void in
-//            if user != nil {
-//                print("User with username \(self.usernameField.text!) logged in.")
-//                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-//            }
-//        })
+        print("You tapped the login button!")
+        PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!, block: { (user: PFUser?, error: Error?) -> Void in
+            if user != nil {
+                print("User with username \(self.usernameField.text!) logged in.")
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print(error?.localizedDescription ?? "Login failed and you didn't even get a real error, sorry")
+            }
+        })
     }
 
     @IBAction func onForgotButton(_ sender: AnyObject) {

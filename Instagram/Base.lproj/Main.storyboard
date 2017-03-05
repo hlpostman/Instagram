@@ -99,11 +99,30 @@
                         <outlet property="loginButton" destination="df4-K9-FDk" id="JeP-pW-cVa"/>
                         <outlet property="passwordField" destination="ZPn-pE-lrx" id="9pD-3r-iOw"/>
                         <outlet property="usernameField" destination="Mub-6c-1Wi" id="y0Z-Az-TSs"/>
+                        <segue destination="mY2-Dw-dLL" kind="presentation" identifier="loginSegue" id="Di2-bp-8l9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tbP-R0-0jw">
+            <objects>
+                <viewController id="mY2-Dw-dLL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ya4-e4-7e2"/>
+                        <viewControllerLayoutGuide type="bottom" id="XF0-cF-lVo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KRk-ig-PdB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdB-M1-kE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="403"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="wUa-vU-dos">
@@ -234,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3FV-7E-Vhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.60000000000002" y="122.78860569715144"/>
+            <point key="canvasLocation" x="118" y="797"/>
         </scene>
     </scenes>
     <resources>
