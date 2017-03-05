@@ -49,7 +49,15 @@ class SignupViewController: UIViewController {
 //                // Present logged in view with welcome message - still need to make this and a "signupSegue"
 ////                self.performSegue(withIdentifier: "signupSegue", sender: nil)
             } else {
-                print(error?.localizedDescription)
+                print("💗\(error?.localizedDescription)💚")
+                if let errorString = error?.localizedDescription  {
+                    // Check if the error is the 202 username taken error
+                    if errorString == "Account already exists for this username." {
+                        // Blur background and show animated pop up view
+                        // notifying user name is taken and offering link to segue to login
+                        print("The username \(self.usernameField.text!) is already taken. If it is your username, you can sign in ->")
+                    }
+                }
             }
         })
     }
