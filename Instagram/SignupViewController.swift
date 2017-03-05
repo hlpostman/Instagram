@@ -50,13 +50,10 @@ class SignupViewController: UIViewController {
 ////                self.performSegue(withIdentifier: "signupSegue", sender: nil)
             } else {
                 print("💗\(error?.localizedDescription)💚")
-                if let errorString = error?.localizedDescription  {
-                    // Check if the error is the 202 username taken error
-                    if errorString == "Account already exists for this username." {
-                        // Blur background and show animated pop up view
-                        // notifying user name is taken and offering link to segue to login
-                        print("The username \(self.usernameField.text!) is already taken. If it is your username, you can sign in ->")
-                    }
+                if (error as! NSError).code == 202 {
+                    // Blur background and show animated pop up view
+                    // notifying user name is taken and offering link to segue to login
+                    print("The username \(self.usernameField.text!) is already taken. If it is your username, you can sign in ->")
                 }
             }
         })
