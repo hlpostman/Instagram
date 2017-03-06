@@ -283,6 +283,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="onGoToLoginButton:" destination="XGP-da-0vt" eventType="touchUpInside" id="apd-Q0-txA"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="vKh-ad-wR7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
