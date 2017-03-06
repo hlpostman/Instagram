@@ -60,11 +60,17 @@ class SignupViewController: UIViewController {
     }
 
     @IBAction func onGoToTerms(_ sender: AnyObject) {
-        // Open URL to Instagram Terms and Privacy webpage
+        // Open URL to Instagram Terms webpage
         let termsURL = NSURL(string: "https://help.instagram.com/478745558852511")! as URL
         UIApplication.shared.open(termsURL, options: [:], completionHandler: nil)
     }
     
+    @IBAction func onGoToPrivacyPolicy(_ sender: AnyObject) {
+        // Open URL to Instagram Privacy Policy webpage
+        let termsURL = NSURL(string: "https://help.instagram.com/155833707900388")! as URL
+        UIApplication.shared.open(termsURL, options: [:], completionHandler: nil)
+    }
+
     @IBAction func onGoToLoginButton(_ sender: AnyObject) {
         // Present Login view controller
     }

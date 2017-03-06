@@ -195,6 +195,9 @@
                                                 <state key="normal" title="Privacy Policy">
                                                     <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onGoToPrivacyPolicy:" destination="XGP-da-0vt" eventType="touchUpInside" id="Ms1-KI-zJj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asf-Zr-m3W">
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
