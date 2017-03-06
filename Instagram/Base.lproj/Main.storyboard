@@ -183,6 +183,41 @@
                                         <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvR-Ou-FXn" userLabel="Terms &amp; Privacy Policy Content Hugger">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyl-q7-tyO">
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i6-ze-Ftx" userLabel="Prvacy Policy">
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="Privacy Policy">
+                                                    <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asf-Zr-m3W">
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="Terms">
+                                                    <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onGoToTerms:" destination="XGP-da-0vt" eventType="touchUpInside" id="8mR-7l-eZP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="zyl-q7-tyO" firstAttribute="bottom" secondItem="asf-Zr-m3W" secondAttribute="bottom" constant="-4" id="0Lm-O8-IyL"/>
+                                            <constraint firstItem="asf-Zr-m3W" firstAttribute="leading" secondItem="HvR-Ou-FXn" secondAttribute="leading" constant="8" id="5jj-g9-Rqk"/>
+                                            <constraint firstAttribute="height" constant="50" id="83v-q4-Iox"/>
+                                            <constraint firstItem="1i6-ze-Ftx" firstAttribute="centerY" secondItem="HvR-Ou-FXn" secondAttribute="centerY" id="LC4-Nr-MN5"/>
+                                            <constraint firstItem="zyl-q7-tyO" firstAttribute="leading" secondItem="asf-Zr-m3W" secondAttribute="trailing" constant="2" id="V2J-yY-cS2"/>
+                                            <constraint firstItem="1i6-ze-Ftx" firstAttribute="leading" secondItem="zyl-q7-tyO" secondAttribute="trailing" constant="2" id="qa1-Mx-VAC"/>
+                                            <constraint firstAttribute="width" constant="171" id="u6B-hu-hko"/>
+                                            <constraint firstItem="asf-Zr-m3W" firstAttribute="centerY" secondItem="HvR-Ou-FXn" secondAttribute="centerY" id="vqX-j2-Kcb"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -191,6 +226,7 @@
                                     <constraint firstItem="BRM-m3-Ejj" firstAttribute="centerX" secondItem="GQn-w3-usf" secondAttribute="centerX" id="Qqg-9k-ptN"/>
                                     <constraint firstItem="5yB-LC-if1" firstAttribute="centerX" secondItem="GQn-w3-usf" secondAttribute="centerX" id="Wfj-lW-bKP"/>
                                     <constraint firstAttribute="height" constant="438" id="m53-Gq-LsR"/>
+                                    <constraint firstItem="HvR-Ou-FXn" firstAttribute="centerX" secondItem="GQn-w3-usf" secondAttribute="centerX" id="tP1-kV-Cyg"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up you agree to our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpw-5w-396">
@@ -226,17 +262,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignupButton:" destination="XGP-da-0vt" eventType="touchUpInside" id="Kxg-w8-eiD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i6-ze-Ftx">
-                                <frame key="frameInset" minX="86" minY="446" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <state key="normal" title="Terms &amp;">
-                                    <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onGoToTerms:" destination="XGP-da-0vt" eventType="touchUpInside" id="zAZ-9H-b2p"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AP-w9-gLF">
@@ -299,6 +324,7 @@
                             <constraint firstItem="oGU-Xs-ZJI" firstAttribute="leading" secondItem="mCe-wW-5tb" secondAttribute="leadingMargin" constant="55" id="cDg-OK-Qec"/>
                             <constraint firstItem="GQn-w3-usf" firstAttribute="leading" secondItem="mCe-wW-5tb" secondAttribute="leadingMargin" constant="10" id="d6p-Q1-DZQ"/>
                             <constraint firstItem="GQn-w3-usf" firstAttribute="top" secondItem="fNT-HM-b2A" secondAttribute="bottom" constant="40" id="ejP-L7-gxu"/>
+                            <constraint firstItem="vpw-5w-396" firstAttribute="top" secondItem="HvR-Ou-FXn" secondAttribute="top" id="euF-T6-9Us"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KPH-QK-sNF" secondAttribute="trailing" constant="55" id="olL-FJ-WAI"/>
                             <constraint firstItem="UX7-Z0-pQI" firstAttribute="top" secondItem="KPH-QK-sNF" secondAttribute="bottom" constant="14" id="p3X-Wg-MSd"/>
                             <constraint firstItem="4AP-w9-gLF" firstAttribute="top" secondItem="GQn-w3-usf" secondAttribute="bottom" constant="35" id="sDg-nz-4r1"/>
