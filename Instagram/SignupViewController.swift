@@ -46,8 +46,8 @@ class SignupViewController: UIViewController {
         newUser.signUpInBackground(block: { (success: Bool, error: Error?) -> Void in
             if success {
                 print("Created a user with username \(newUser.username!)")
-//                // Present logged in view with welcome message - still need to make this and a "signupSegue"
-////                self.performSegue(withIdentifier: "signupSegue", sender: nil)
+                // Present logged in view with welcome message - still need to make this and a "signupSegue"
+                self.performSegue(withIdentifier: "signupSegue", sender: nil)
             } else {
                 print("💗\(error?.localizedDescription)💚")
                 if (error as! NSError).code == 202 {

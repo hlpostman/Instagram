@@ -279,6 +279,7 @@
                         <outlet property="signupBackdropView" destination="GQn-w3-usf" id="h1m-yL-P9p"/>
                         <outlet property="signupButton" destination="UX7-Z0-pQI" id="Gyh-3W-KzY"/>
                         <outlet property="usernameField" destination="oGU-Xs-ZJI" id="Q3v-wV-WXt"/>
+                        <segue destination="mY2-Dw-dLL" kind="presentation" identifier="signupSegue" id="jZ4-vd-Ykq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3FV-7E-Vhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -289,4 +290,7 @@
     <resources>
         <image name="Instagram_Logo" width="203" height="69"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jZ4-vd-Ykq"/>
+    </inferredMetricsTieBreakers>
 </document>
