@@ -9,20 +9,40 @@
 import UIKit
 import Parse
 
-class TimelineViewController: UIViewController {
+class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var posts: [PFObject]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Table view data source and delegate
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        // Get timeline with network call
+        networkCall()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func networkCall() {
+        
+        let query = PFQuery(className: "Post")
+        query.order(byDescending: "createdAt")
+        query.limit = 20
+        
+        // Look through Parse
+        query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            
+            if let posts =  posts {
+                self.posts = posts
+                self.tableView.reloadData()
+            } else {
+                print("Error fetching timeline in function networkCall(): \(error!.localizedDescription)")
+            }
+        }
+        
     }
     
     @IBAction func onLogoutButtonPressed(_ sender: AnyObject) {
@@ -38,14 +58,9 @@ class TimelineViewController: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    */
 
 }
