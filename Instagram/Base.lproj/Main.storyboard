@@ -136,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="xGT-8h-3pD">
             <objects>
-                <viewController id="xp5-Ae-bsg" sceneMemberID="viewController">
+                <viewController id="xp5-Ae-bsg" customClass="ProfileViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="utz-to-O3a"/>
                         <viewControllerLayoutGuide type="bottom" id="LyK-d4-PsI"/>
@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="4693.6000000000004" y="-258.62068965517244"/>
         </scene>
-        <!--View Controller-->
+        <!--Timeline View Controller-->
         <scene sceneID="tbP-R0-0jw">
             <objects>
-                <viewController id="mY2-Dw-dLL" sceneMemberID="viewController">
+                <viewController id="mY2-Dw-dLL" customClass="TimelineViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ya4-e4-7e2"/>
                         <viewControllerLayoutGuide type="bottom" id="XF0-cF-lVo"/>
@@ -192,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="3754.4000000000001" y="402.54872563718146"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Photo View Controller-->
         <scene sceneID="2il-ju-IeC">
             <objects>
-                <viewController id="rol-hJ-QXX" sceneMemberID="viewController">
+                <viewController id="rol-hJ-QXX" customClass="AddPhotoViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hAr-yS-T5x"/>
                         <viewControllerLayoutGuide type="bottom" id="jPL-Sg-yJc"/>
