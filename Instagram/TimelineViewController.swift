@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class TimelineViewController: UIViewController {
 
@@ -21,6 +22,18 @@ class TimelineViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onLogoutButtonPressed(_ sender: AnyObject) {
+        // Log the user out of the backend
+        PFUser.logOutInBackground { (error: Error?) in
+            // If no error, return user to the login view controller
+            if error == nil {
+                self.performSegue(withIdentifier: "logoutSegue", sender: nil)
+            } else {
+                print("Error logging out")
+            }
+            
+        }
+    }
 
     /*
     // MARK: - Navigation

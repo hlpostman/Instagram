@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhJ-9e-NhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4693.6000000000004" y="-258.62068965517244"/>
+            <point key="canvasLocation" x="3521" y="403"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="tbP-R0-0jw">
@@ -186,11 +186,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SOF-nA-rGB"/>
+                    <navigationItem key="navigationItem" id="SOF-nA-rGB">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="XEx-XD-uW7">
+                            <connections>
+                                <action selector="onLogoutButtonPressed:" destination="mY2-Dw-dLL" id="vsv-ZE-PYO"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="logoutSegue" id="ZiP-TB-oh5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdB-M1-kE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3754.4000000000001" y="402.54872563718146"/>
+            <point key="canvasLocation" x="3521" y="-306"/>
         </scene>
         <!--Add Photo View Controller-->
         <scene sceneID="2il-ju-IeC">
@@ -218,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTJ-gb-7we" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4693.6000000000004" y="1114.992503748126"/>
+            <point key="canvasLocation" x="3484" y="1115"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="wUa-vU-dos">
@@ -434,7 +441,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHr-d6-8o2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2815.1999999999998" y="402.54872563718146"/>
+            <point key="canvasLocation" x="2713" y="-306"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TPb-wb-Y0l">
@@ -442,6 +449,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="NqF-t8-Vd1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="76p-Xt-lNv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -472,7 +480,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEy-vy-F4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3752.8000000000002" y="-259.52023988005999"/>
+            <point key="canvasLocation" x="2714" y="403"/>
         </scene>
         <!--Item-->
         <scene sceneID="gRd-Ss-Vfi">
@@ -491,13 +499,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YR9-ox-gwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3752.8000000000002" y="1114.992503748126"/>
+            <point key="canvasLocation" x="2713" y="1115"/>
         </scene>
     </scenes>
     <resources>
         <image name="Instagram_Logo" width="203" height="69"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ZiP-TB-oh5"/>
         <segue reference="jZ4-vd-Ykq"/>
     </inferredMetricsTieBreakers>
 </document>
