@@ -183,13 +183,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNT-14-Hsd">
-                                <frame key="frameInset" minY="72" width="375" height="538"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNT-14-Hsd">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SDB-eg-reQ">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SDB-eg-reQ" id="x2I-2N-NH4">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oNT-14-Hsd" firstAttribute="leading" secondItem="KRk-ig-PdB" secondAttribute="leading" id="15s-g0-9zb"/>
+                            <constraint firstAttribute="trailing" secondItem="oNT-14-Hsd" secondAttribute="trailing" id="8M4-r1-tso"/>
+                            <constraint firstItem="XF0-cF-lVo" firstAttribute="top" secondItem="oNT-14-Hsd" secondAttribute="bottom" constant="8" id="Cwf-el-RZo"/>
+                            <constraint firstItem="oNT-14-Hsd" firstAttribute="top" secondItem="Ya4-e4-7e2" secondAttribute="bottom" constant="8" id="E6h-ts-u2n"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SOF-nA-rGB">
                         <barButtonItem key="leftBarButtonItem" title="Log out" id="XEx-XD-uW7">
