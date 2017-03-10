@@ -10,6 +10,9 @@
 		098F69EB4062CC19BD03F4FE /* Pods_InstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB20BC939A59249648CDC6 /* Pods_InstagramUITests.framework */; };
 		521A65C16E2957B34C5391B4 /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846AD96E8C0301F463B810FA /* Pods_InstagramTests.framework */; };
 		85C56AF95659B8B95DAF9ECC /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD9EE2161E60D1C739A1FD2 /* Pods_Instagram.framework */; };
+		BE2F409F1E7230B7001D844E /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F409E1E7230B7001D844E /* TimelineViewController.swift */; };
+		BE2F40A11E7230C4001D844E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F40A01E7230C4001D844E /* ProfileViewController.swift */; };
+		BE2F40A31E7230D6001D844E /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F40A21E7230D6001D844E /* AddPhotoViewController.swift */; };
 		BE9A11131E6618D30032EAB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11121E6618D30032EAB5 /* AppDelegate.swift */; };
 		BE9A11151E6618D30032EAB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11141E6618D30032EAB5 /* ViewController.swift */; };
 		BE9A11181E6618D30032EAB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9A11161E6618D30032EAB5 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		8FD9EE2161E60D1C739A1FD2 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B92BDAA648F0FD2D01AAF9 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		BC6F2E94C618C8FF57E5F720 /* Pods-InstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramUITests/Pods-InstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE2F409E1E7230B7001D844E /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		BE2F40A01E7230C4001D844E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BE2F40A21E7230D6001D844E /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		BE9A110F1E6618D30032EAB5 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9A11121E6618D30032EAB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE9A11141E6618D30032EAB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +179,9 @@
 		BE9A11441E662D730032EAB5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BE2F409E1E7230B7001D844E /* TimelineViewController.swift */,
+				BE2F40A01E7230C4001D844E /* ProfileViewController.swift */,
+				BE2F40A21E7230D6001D844E /* AddPhotoViewController.swift */,
 				BE9A11421E6627020032EAB5 /* SignupViewController.swift */,
 				BE9A11401E66240B0032EAB5 /* LoginViewController.swift */,
 			);
@@ -460,10 +469,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2F40A11E7230C4001D844E /* ProfileViewController.swift in Sources */,
 				BE9A11411E66240B0032EAB5 /* LoginViewController.swift in Sources */,
 				BE9A11151E6618D30032EAB5 /* ViewController.swift in Sources */,
 				BE9A11431E6627020032EAB5 /* SignupViewController.swift in Sources */,
 				BE9A11131E6618D30032EAB5 /* AppDelegate.swift in Sources */,
+				BE2F40A31E7230D6001D844E /* AddPhotoViewController.swift in Sources */,
+				BE2F409F1E7230B7001D844E /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
