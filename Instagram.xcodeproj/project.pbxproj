@@ -14,7 +14,6 @@
 		BE2F40A11E7230C4001D844E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F40A01E7230C4001D844E /* ProfileViewController.swift */; };
 		BE2F40A31E7230D6001D844E /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F40A21E7230D6001D844E /* AddPhotoViewController.swift */; };
 		BE9A11131E6618D30032EAB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11121E6618D30032EAB5 /* AppDelegate.swift */; };
-		BE9A11151E6618D30032EAB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11141E6618D30032EAB5 /* ViewController.swift */; };
 		BE9A11181E6618D30032EAB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9A11161E6618D30032EAB5 /* Main.storyboard */; };
 		BE9A111A1E6618D30032EAB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9A11191E6618D30032EAB5 /* Assets.xcassets */; };
 		BE9A111D1E6618D30032EAB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9A111B1E6618D30032EAB5 /* LaunchScreen.storyboard */; };
@@ -54,7 +53,6 @@
 		BE2F40A21E7230D6001D844E /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		BE9A110F1E6618D30032EAB5 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9A11121E6618D30032EAB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE9A11141E6618D30032EAB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE9A11171E6618D30032EAB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE9A11191E6618D30032EAB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE9A111C1E6618D30032EAB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				BE9A11121E6618D30032EAB5 /* AppDelegate.swift */,
-				BE9A11141E6618D30032EAB5 /* ViewController.swift */,
 				BE9A11161E6618D30032EAB5 /* Main.storyboard */,
 				BE9A11441E662D730032EAB5 /* View Controllers */,
 				BE9A11191E6618D30032EAB5 /* Assets.xcassets */,
@@ -471,7 +468,6 @@
 			files = (
 				BE2F40A11E7230C4001D844E /* ProfileViewController.swift in Sources */,
 				BE9A11411E66240B0032EAB5 /* LoginViewController.swift in Sources */,
-				BE9A11151E6618D30032EAB5 /* ViewController.swift in Sources */,
 				BE9A11431E6627020032EAB5 /* SignupViewController.swift in Sources */,
 				BE9A11131E6618D30032EAB5 /* AppDelegate.swift in Sources */,
 				BE2F40A31E7230D6001D844E /* AddPhotoViewController.swift in Sources */,
