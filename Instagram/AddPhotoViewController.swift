@@ -11,6 +11,12 @@ import Parse
 
 class AddPhotoViewController: UIViewController {
 
+    
+    @IBOutlet weak var openCameraButton: UIButton!
+    @IBOutlet weak var openPhotosLibraryButton: UIButton!
+    @IBOutlet weak var newPhotoImageView: UIImageView!
+    @IBOutlet weak var addCaptionTextField: UITextField!
+    @IBOutlet weak var submitPostButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
