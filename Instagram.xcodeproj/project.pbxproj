@@ -22,6 +22,7 @@
 		BE9A11411E66240B0032EAB5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11401E66240B0032EAB5 /* LoginViewController.swift */; };
 		BE9A11431E6627020032EAB5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11421E6627020032EAB5 /* SignupViewController.swift */; };
 		BECAA1EA1E73729F005D81B6 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAA1E91E73729F005D81B6 /* TimelineTableViewCell.swift */; };
+		BECAA1EE1E7388A1005D81B6 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAA1ED1E7388A1005D81B6 /* UserPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		BE9A11401E66240B0032EAB5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BE9A11421E6627020032EAB5 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		BECAA1E91E73729F005D81B6 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		BECAA1ED1E7388A1005D81B6 /* UserPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		CEAB20BC939A59249648CDC6 /* Pods_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F607A81D89894FFDA7B6FCF0 /* Pods-InstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramTests/Pods-InstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 			children = (
 				BE9A11121E6618D30032EAB5 /* AppDelegate.swift */,
 				BE9A11161E6618D30032EAB5 /* Main.storyboard */,
+				BECAA1EC1E738878005D81B6 /* Models */,
 				BECAA1EB1E7373B8005D81B6 /* Views */,
 				BE9A11441E662D730032EAB5 /* View Controllers */,
 				BE9A11191E6618D30032EAB5 /* Assets.xcassets */,
@@ -194,6 +197,14 @@
 				BECAA1E91E73729F005D81B6 /* TimelineTableViewCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		BECAA1EC1E738878005D81B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BECAA1ED1E7388A1005D81B6 /* UserPost.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +494,7 @@
 				BE9A11431E6627020032EAB5 /* SignupViewController.swift in Sources */,
 				BE9A11131E6618D30032EAB5 /* AppDelegate.swift in Sources */,
 				BE2F40A31E7230D6001D844E /* AddPhotoViewController.swift in Sources */,
+				BECAA1EE1E7388A1005D81B6 /* UserPost.swift in Sources */,
 				BE2F409F1E7230B7001D844E /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
