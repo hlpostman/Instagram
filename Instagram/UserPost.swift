@@ -15,7 +15,7 @@ class UserPost: NSObject {
     class func postUserImage(image: UIImage?, withCaption caption: String?, withCompletion completion: PFBooleanResultBlock?) {
         
         // Create Parse object PFObject
-        let post = PFObject(className: "UserPost")
+        let post = PFObject(className: "Post")
         
         post["media"] = getPFFileFromImage(image: image)
         post["author"] = PFUser.current()
@@ -37,7 +37,7 @@ class UserPost: NSObject {
             if let imageData = UIImagePNGRepresentation(image) {
 
                 print("UserPost object succesfully found image png")
-                return PFFile(name: "userPostImage.png", data: imageData)
+                return PFFile(name: "image.png", data: imageData)
                 }
         }
         print("UserPost object FAILED to find or return image png")
