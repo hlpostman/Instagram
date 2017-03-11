@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="xGT-8h-3pD">
             <objects>
                 <viewController id="xp5-Ae-bsg" customClass="ProfileViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,13 +158,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vaD-3x-KSD"/>
+                    <navigationItem key="navigationItem" title="Profile" id="vaD-3x-KSD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhJ-9e-NhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3521" y="403"/>
         </scene>
-        <!--Timeline View Controller-->
+        <!--Instagram-->
         <scene sceneID="tbP-R0-0jw">
             <objects>
                 <viewController id="mY2-Dw-dLL" customClass="TimelineViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -226,7 +226,7 @@
                             <constraint firstItem="oNT-14-Hsd" firstAttribute="top" secondItem="Ya4-e4-7e2" secondAttribute="bottom" constant="8" id="E6h-ts-u2n"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="SOF-nA-rGB">
+                    <navigationItem key="navigationItem" title="Instagram" id="SOF-nA-rGB">
                         <barButtonItem key="leftBarButtonItem" title="Log out" id="XEx-XD-uW7">
                             <connections>
                                 <action selector="onLogoutButtonPressed:" destination="mY2-Dw-dLL" id="vsv-ZE-PYO"/>
@@ -242,7 +242,7 @@
             </objects>
             <point key="canvasLocation" x="3520.8000000000002" y="-306.29685157421289"/>
         </scene>
-        <!--Add Photo View Controller-->
+        <!--New Post-->
         <scene sceneID="2il-ju-IeC">
             <objects>
                 <viewController id="rol-hJ-QXX" customClass="AddPhotoViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -264,7 +264,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iBk-bU-DSd"/>
+                    <navigationItem key="navigationItem" title="New Post" id="iBk-bU-DSd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTJ-gb-7we" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
