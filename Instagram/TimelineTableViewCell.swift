@@ -12,6 +12,23 @@ import ParseUI
 
 class TimelineTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var postedPictureImageView: PFImageView!
+    
+    @IBOutlet weak var captionLabel: UILabel!
+    
+    var userPost: PFObject! {
+        
+       // Set picture into image view and set caption
+        didSet {
+
+            self.postedPictureImageView.file = userPost["media"] as? PFFile
+            self.postedPictureImageView.loadInBackground()
+            
+            self.captionLabel.text = userPost["caption"] as? String
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
