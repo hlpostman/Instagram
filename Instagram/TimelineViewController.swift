@@ -64,8 +64,10 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "timeLineTableViewCell", for: indexPath)
-        //
+        let cell = tableView.dequeueReusableCell(withIdentifier: "timeLineTableViewCell", for: indexPath) as! TimelineTableViewCell
+        if let post = posts?[indexPath.row] {
+            cell.userPost = post
+        }
         return cell
     }
 
