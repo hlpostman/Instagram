@@ -60,6 +60,29 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @IBAction func onSubmitPostButtonPressed(_ sender: AnyObject) {
+    
+        //built-in Parse method that posts the image
+        //Specifically, creates an object that is saved on Parse servers
+        UserPost.postUserImage(image: image, withCaption: addCaptionTextField.text) { (success: Bool, error: Error?) in
+            
+            //If success
+            if success {
+                print("Photo got posted")
+                
+                // Clear out old data and return to homefeed view
+                
+                self.tabBarController?.selectedIndex = 0
+                self.image = nil
+                self.newPhotoImageView.image = nil
+                self.addCaptionTextField.text = ""
+//                self.addCaptionTextField.placeholder = "Caption your photo here..."
+                
+                //Error
+            } else {
+                print("Error posting to \"Instagram\" in function onSubmitPostButtonPressed(): \(error?.localizedDescription)")
+            }
+        }
+    
     }
     
     
