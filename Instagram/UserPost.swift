@@ -20,8 +20,6 @@ class UserPost: NSObject {
         post["media"] = getPFFileFromImage(image: image)
         post["author"] = PFUser.current()
         post["caption"] = caption
-        post["likesCount"] = 0
-        post["commentsCount"] = 0
         
         // Save object (following function will save the object in Parse asynchronously)
         post.saveInBackground(block: completion)

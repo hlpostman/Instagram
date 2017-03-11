@@ -14,6 +14,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     var posts: [PFObject]?
+//    var posts: [PFObject] = [ ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
             
             if let posts =  posts {
+                print("We got some posts")
                 self.posts = posts
                 self.tableView.reloadData()
             } else {
@@ -59,14 +61,19 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return self.posts!.count ?? 0
-        return 20
+        print("Count returned: ", self.posts?.count)
+//        let post = posts![0]
+//        print("Photopath: \(post["media"]!)")
+        return self.posts?.count ?? 0
+//        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "timeLineTableViewCell", for: indexPath) as! TimelineTableViewCell
-        if let post = posts?[indexPath.row] {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TimeLineTableViewCell", for: indexPath) as! TimelineTableViewCell
+        if posts != nil {
+            let post = posts![indexPath.row]
             cell.userPost = post
+            print("💗 Your post:", cell.userPost)
         }
         return cell
     }

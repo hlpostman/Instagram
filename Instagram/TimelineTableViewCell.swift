@@ -21,7 +21,7 @@ class TimelineTableViewCell: UITableViewCell {
        // Set picture into image view and set caption
         didSet {
 
-            self.postedPictureImageView.file = userPost["media"] as? PFFile
+            self.postedPictureImageView.file = userPost["media"] as? PFFile 
             self.postedPictureImageView.loadInBackground()
             
             self.captionLabel.text = userPost["caption"] as? String
