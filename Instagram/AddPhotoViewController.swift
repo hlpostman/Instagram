@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class AddPhotoViewController: UIViewController {
+class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
     @IBOutlet weak var openCameraButton: UIButton!
@@ -17,26 +17,53 @@ class AddPhotoViewController: UIViewController {
     @IBOutlet weak var newPhotoImageView: UIImageView!
     @IBOutlet weak var addCaptionTextField: UITextField!
     @IBOutlet weak var submitPostButton: UIButton!
+    
+    let imagePickControl = UIImagePickerController()
+    var image: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : Any]) {
+        // Get the image selected by the UIImagePickerController
+        let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        // Let the user move the image in the frame and save the position they set
+//        let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
+        
+        // Do something with the images (based on your use case)
+//        image = editedImage
+        image = originalImage
+        newPhotoImageView.image = image
+        
+        // Dismiss UIImagePickerController to go back to your original view controller
+        dismiss(animated: true, completion: nil)
     }
-    */
 
+//    @IBAction func onOpenCameraButtonPressed(_ sender: AnyObject) {
+//        imagePickControl.delegate = self
+//        imagePickControl.allowsEditing = true
+//        imagePickControl.sourceType = UIImagePickerControllerSourceType.camera
+//        self.present(imagePickControl, animated: true, completion: nil)
+//    }
+    
+    @IBAction func onOpenPhotosLibraryBUttonPressed(_ sender: AnyObject) {
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        vc.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onSubmitPostButtonPressed(_ sender: AnyObject) {
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
 }

@@ -276,16 +276,25 @@
                                 <frame key="frameInset" minX="155" minY="443" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="onSubmitPostButtonPressed:" destination="rol-hJ-QXX" eventType="touchUpInside" id="hhT-uu-mgg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYQ-Qw-Pe0">
                                 <frame key="frameInset" minX="33" minY="115" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="onOpenCameraButtonPressed:" destination="rol-hJ-QXX" eventType="touchUpInside" id="1H3-sX-CtD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6Q-JA-5xy">
                                 <frame key="frameInset" minX="259" minY="115" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Photos Library"/>
+                                <connections>
+                                    <action selector="onOpenPhotosLibraryBUttonPressed:" destination="rol-hJ-QXX" eventType="touchUpInside" id="Z0W-Ir-O68"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
