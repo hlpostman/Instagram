@@ -20,6 +20,7 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     
     let imagePickControl = UIImagePickerController()
     var image: UIImage!
+    var imgPickControl = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +43,12 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         dismiss(animated: true, completion: nil)
     }
 
-//    @IBAction func onOpenCameraButtonPressed(_ sender: AnyObject) {
-//        imagePickControl.delegate = self
-//        imagePickControl.allowsEditing = true
-//        imagePickControl.sourceType = UIImagePickerControllerSourceType.camera
-//        self.present(imagePickControl, animated: true, completion: nil)
-//    }
+    @IBAction func onOpenCameraButtonPressed(_ sender: AnyObject) {
+        let vc = UIImagePickerController()
+        vc.allowsEditing = true
+        vc.sourceType = UIImagePickerControllerSourceType.camera
+        self.present(vc, animated: true, completion: nil)
+    }
     
     @IBAction func onOpenPhotosLibraryBUttonPressed(_ sender: AnyObject) {
         let vc = UIImagePickerController()
