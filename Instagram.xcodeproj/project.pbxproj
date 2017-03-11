@@ -21,6 +21,7 @@
 		BE9A11331E6618D30032EAB5 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11321E6618D30032EAB5 /* InstagramUITests.swift */; };
 		BE9A11411E66240B0032EAB5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11401E66240B0032EAB5 /* LoginViewController.swift */; };
 		BE9A11431E6627020032EAB5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9A11421E6627020032EAB5 /* SignupViewController.swift */; };
+		BECAA1EA1E73729F005D81B6 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAA1E91E73729F005D81B6 /* TimelineTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		BE9A11341E6618D30032EAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9A11401E66240B0032EAB5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BE9A11421E6627020032EAB5 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BECAA1E91E73729F005D81B6 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		CEAB20BC939A59249648CDC6 /* Pods_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F607A81D89894FFDA7B6FCF0 /* Pods-InstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramTests/Pods-InstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 			children = (
 				BE9A11121E6618D30032EAB5 /* AppDelegate.swift */,
 				BE9A11161E6618D30032EAB5 /* Main.storyboard */,
+				BECAA1EB1E7373B8005D81B6 /* Views */,
 				BE9A11441E662D730032EAB5 /* View Controllers */,
 				BE9A11191E6618D30032EAB5 /* Assets.xcassets */,
 				BE9A111B1E6618D30032EAB5 /* LaunchScreen.storyboard */,
@@ -183,6 +186,14 @@
 				BE9A11401E66240B0032EAB5 /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BECAA1EB1E7373B8005D81B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BECAA1E91E73729F005D81B6 /* TimelineTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECAA1EA1E73729F005D81B6 /* TimelineTableViewCell.swift in Sources */,
 				BE2F40A11E7230C4001D844E /* ProfileViewController.swift in Sources */,
 				BE9A11411E66240B0032EAB5 /* LoginViewController.swift in Sources */,
 				BE9A11431E6627020032EAB5 /* SignupViewController.swift in Sources */,
